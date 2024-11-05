@@ -9,16 +9,17 @@ respective (français ➔ « Salut », anglais ➔ « Hello », espagnol ➔ « 
 <?php 
 
 $table = ["Mickaël" => "FRA" , "Virgile" => "ESP" , "Marie-Claire" => "ENG"];
+ksort($table);
 
 foreach ($table as $key => $value) {
     if ($value == "FRA") {
-        $hey = "Salut";
+        $greeting = "Salut";
     }
     if ($value == "ESP") {
-        $hey = "Hola";
+        $greeting = "Hola";
     }
     if ($value == "ENG") {
-        $hey = "Hello";
+        $greeting = "Hello";
     }
-    echo "$hey $key <br>";
+    echo "$greeting $key <br>";
 }
