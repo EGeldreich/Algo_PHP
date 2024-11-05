@@ -8,7 +8,14 @@
 
 $number = 3;
 
-echo "Table de $number :<br>";
+echo "Table de $number avec boucle FOR:<br>";
 for ($i = 1; $i < 10; $i++) {
     echo "$i x $number = ".$i*$number."<br>";
+}
+
+$i = 1;
+echo "<br>Table de $number avec boucle WHILE:<br>";
+while ($i < 10) {
+    echo "$i x $number = ".$i*$number."<br>";
+    $i++;
 }

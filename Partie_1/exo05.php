@@ -9,7 +9,7 @@ Attention, la valeur générée devra être arrondie à 2 décimales.</p>
 
 $francs = 100;
 
-$euros = number_format($francs / 6.55957, 2);
+$euros = round($francs / 6.55957, 2);
 
 echo "Montant en francs : $francs <br>";
 echo "$francs francs = $euros euros";

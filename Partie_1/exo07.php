@@ -12,25 +12,44 @@ Si la catégorie n’est pas gérée, merci de le préciser.</p>
 
 <?php
 
-$age = 8;
+$age = 9;
+
+if ($age >=6) {
+    $cat = "Poussin";
+}
+if ($age >=8) {
+    $cat = "Pupille";
+}
+if ($age >=10) {
+    $cat = "Minime";
+}
+if ($age >=12) {
+    $cat = "Cadet";
+}
 
 if ($age < 6) {
     echo "L'enfant qui a $age ans est trop jeune pour être dans une catégorie.";
-}
-
-if ($age > 6) {
-    if ($age == 6 or $age ==7) {
-        $cat = "Poussin";
-    }
-    if ($age == 8 or $age ==9) {
-        $cat = "Pupille";
-    }
-    if ($age == 10 or $age ==11) {
-        $cat = "Pupille";
-    }
-    if ($age > 11) {
-        $cat = "Cadet";
-    }
+} else {
     echo "L'enfant qui a $age ans appartient à la catégorie « $cat »";
 }
+
+// if ($age < 6) {
+//     echo "L'enfant qui a $age ans est trop jeune pour être dans une catégorie.";
+// }
+
+// if ($age > 6) {
+//     if ($age == 6 or $age ==7) {
+//         $cat = "Poussin";
+//     }
+//     if ($age == 8 or $age ==9) {
+//         $cat = "Pupille";
+//     }
+//     if ($age == 10 or $age ==11) {
+//         $cat = "Pupille";
+//     }
+//     if ($age > 11) {
+//         $cat = "Cadet";
+//     }
+//     echo "L'enfant qui a $age ans appartient à la catégorie « $cat »";
+// }
 
