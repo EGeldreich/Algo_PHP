@@ -8,3 +8,13 @@ d'afficher le nombre de marques de voitures présentes dans le tableau.<br>
 <h2>Resultat :</h2>
 
 <?php
+
+$brands = ["Peugeot" , "Renault" , "BMW" , "Aston Martin" , "Alpine"];
+$number = count($brands);
+
+echo "Il y a $number marques de voitures dans le tableau <br>";
+echo "<ul>";
+for ($i = 0; $i < $number; $i++) {
+    echo "<li> $brands[$i] </li>";
+}
+echo "</ul>";

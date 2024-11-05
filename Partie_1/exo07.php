@@ -12,7 +12,7 @@ Si la catégorie n’est pas gérée, merci de le préciser.</p>
 
 <?php
 
-$age = 9;
+$age = 13;
 
 if ($age >=6) {
     $cat = "Poussin";
