@@ -11,11 +11,7 @@ $gradesTable = [10 , 12 , 8 , 19 , 3 , 16 , 11 , 13 , 9];
 
 $gradesString = implode(" " , $gradesTable);
 
-$totalGrade = 0;
-
-foreach($gradesTable as $grade) {
-    $totalGrade = $totalGrade + $grade;
-}
+$totalGrade = array_sum($gradesTable);
 
 $average = round(($totalGrade / count($gradesTable)) , 2);
 
