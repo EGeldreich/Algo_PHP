@@ -8,18 +8,12 @@ respective (français ➔ « Salut », anglais ➔ « Hello », espagnol ➔ « 
 
 <?php 
 
-$table = ["Mickaël" => "FRA" , "Virgile" => "ESP" , "Marie-Claire" => "ENG"];
+$table = ["Mickaël" => "FRA" , "Virgile" => "ESP" , "Marie-Claire" => "ENG", "Bryan" => "GER"];
 ksort($table);
 
+$greetings = ["FRA" => "Salut" , "ESP" => "Hola" , "ENG" => "Hello" , "GER" => "Hallo"];
+
 foreach ($table as $key => $value) {
-    if ($value == "FRA") {
-        $greeting = "Salut";
-    }
-    if ($value == "ESP") {
-        $greeting = "Hola";
-    }
-    if ($value == "ENG") {
-        $greeting = "Hello";
-    }
+    $greeting = $greetings[$value];
     echo "$greeting $key <br>";
 }
