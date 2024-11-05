@@ -14,7 +14,10 @@ $number = count($brands);
 
 echo "Il y a $number marques de voitures dans le tableau <br>";
 echo "<ul>";
-for ($i = 0; $i < $number; $i++) {
-    echo "<li> $brands[$i] </li>";
+// for ($i = 0; $i < $number; $i++) {
+//     echo "<li> $brands[$i] </li>";
+// }
+foreach($brands as $i) {
+    echo "<li> $i </li>";
 }
 echo "</ul>";
