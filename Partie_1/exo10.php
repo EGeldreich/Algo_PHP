@@ -12,25 +12,37 @@ $paid = 200;
 $due = $paid - $price;
 
 $ten = floor($due / 10);
-$dueMinusTens = $due - ($ten*10;
+$dueMinusTens = $due - ($ten*10);
 
 $five = floor($dueMinusTens/5);
-$dueMinusFives = $dueMinusTens - $five;
+$dueMinusFives = $dueMinusTens - ($five*5);
 
 $two = floor($dueMinusFives/2);
-$dueMinusTwos = $dueMinusFives - $two;
+$dueMinusTwos = $dueMinusFives - ($two*2);
 
 $one = floor($dueMinusTwos/1);
 
-echo "$ten <br>";
-echo "left : $dueMinusTens <br><br>";
-echo "$five <br>";
-echo "$two <br>";
-echo "$one <br>";
+if ($ten > 1) {
+    $pluralTen = "billets";
+} else {
+    $pluralTen = "billet";
+}
+
+if ($five > 1) {
+    $pluralFive = "billets";
+} else {
+    $pluralFive = "billet";
+}
+
+if ($two > 1) {
+    $pluralTwo = "pièces";
+} else {
+    $pluralTwo = "pièce";
+}
 
 echo "Montant à payer : $price €<br>";
 echo "Montant versé : $paid €<br>";
 echo "Reste à rendre : $due €<br>";
 echo "***************************************************<br>";
 echo "Rendue de monnaie :<br>";
-// echo "$ten billets de 10€ - $five billets de 5€ - $two pièce de 2€ - $one pièce de 1€";
+echo "$ten $pluralTen de 10€ - $five $pluralFive de 5€ - $two $pluralTwo de 2€ - $one pièce de 1€";
