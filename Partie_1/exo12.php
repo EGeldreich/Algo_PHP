@@ -8,12 +8,17 @@ respective (français ➔ « Salut », anglais ➔ « Hello », espagnol ➔ « 
 
 <?php 
 
-$tableau = ["Mickaël" => "FRA" , "Virgile" => "ESP" , "Marie-Claire" => "ENG"];
+$table = ["Mickaël" => "FRA" , "Virgile" => "ESP" , "Marie-Claire" => "ENG"];
 
-
-
-// Exemple : tableau ➔ Mickaël => FRA, Virgile => ESP, Marie-Claire => ENG
-// Affichage :
-// Salut Mickaël
-// Hola Virgile
-// Hello Marie-Claire
+foreach ($table as $key => $value) {
+    if ($value == "FRA") {
+        $hey = "Salut";
+    }
+    if ($value == "ESP") {
+        $hey = "Hola";
+    }
+    if ($value == "ENG") {
+        $hey = "Hello";
+    }
+    echo "$hey $key <br>";
+}
