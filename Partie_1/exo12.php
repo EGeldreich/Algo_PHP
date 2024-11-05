@@ -13,7 +13,7 @@ ksort($table);
 
 $greetings = ["FRA" => "Salut" , "ESP" => "Hola" , "ENG" => "Hello" , "GER" => "Hallo"];
 
-foreach ($table as $key => $value) {
-    $greeting = $greetings[$value];
-    echo "$greeting $key <br>";
+foreach ($table as $surname => $langage) {
+    $greeting = $greetings[$langage];
+    echo "$greeting $surname <br>";
 }
