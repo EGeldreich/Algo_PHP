@@ -18,8 +18,6 @@ $capitales = [
     "Italie" => "Rome"
 ];
 
-
-
 function afficherTableHTML($capitales) {
     ksort($capitales);
     $result = "<table border=1>
