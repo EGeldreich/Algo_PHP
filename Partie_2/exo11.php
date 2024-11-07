@@ -16,7 +16,7 @@
 // DONNE LE RESULTAT EN ANGLAIS
 
 function formateDateFr($givenDate){
-    $fmt = new IntlDateFormatter('fr_FR',); // create new date format, here I juste need French
+    $fmt = new IntlDateFormatter('fr_FR'); // create new date format, here I juste need French
     $fmt->setPattern('EEEE dd MMMM YYYY'); // set the format pattern 
     $date = date_create($givenDate); // transform the given date into a DateTime
     return $fmt->format($date); // Return de date with our created format
