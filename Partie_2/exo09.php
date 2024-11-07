@@ -15,7 +15,7 @@ function generateRadio($elements) {
     $result = "<form>"; // Open form
 
     foreach($elements as $label) { // For each element ->
-         $result .= "<input type='radio'> 
+         $result .= "<input type='radio' name='choice'> 
                     <label>$label</label><br>"; //add the label with apropriate name
     }
     $result .= "</form>"; // close form
